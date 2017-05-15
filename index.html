@@ -30,18 +30,18 @@
                 </form>
             </div>
             <div class="header-li fl">
-                <h1><a href="">Zomvip.Com</a></h1>
+                <h1><a href="index.html">Zomvip.Com</a></h1>
             </div>
             <div class="header-li fl"></div>
         </div>
     </div>
     <div class="nav" id="nav">
         <ul class="nav-wrapper mainWidth oh">
-            <a href="">Home</a>
-            <a href="">Fidget Spinner</a>
-            <a href="">Fidget Cube</a>
-            <a href="">Magic Cube</a>
-            <a href="">Magnetic Balls</a>
+            <a href="index.html">Home</a>
+            <a href="category.html">Fidget Spinner</a>
+            <a href="category.html">Fidget Cube</a>
+            <a href="category.html">Magic Cube</a>
+            <a href="category.html">Magnetic Balls</a>
         </ul>
     </div>
     <!--content-->
@@ -455,6 +455,7 @@
             $('#content-li-wrapper')[0].innerHTML+=li;
             $('.gridImage')[i].src=bl+product[i].imgLink;
             $('.grid-parameter')[i].innerHTML=product[i].text;
+            $('.grid-title-text')[i].href='detail.html';
             $('.grid-title-text')[i].innerHTML=product[i].title;
             $('.price')[i].innerHTML=product[i].price;
             $('.oPrice')[i].innerHTML=product[i].oPrice;
