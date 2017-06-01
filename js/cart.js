@@ -24,6 +24,12 @@ $(document).ready(function(){
         $(this).parent().parent().siblings().children('.t_price').text(thisPrice*i+'.00');
         toPrice();
     });
+    $('.goods-quantity-set').blur(function(){
+        var i=$(this).val();
+        var thisPrice=parseInt($(this).parent().parent().siblings().children('.q_price').text());
+        $(this).parent().parent().siblings().children('.t_price').text(thisPrice*i+'.00');
+        toPrice();
+    });
     function toPrice(){
         var tp=0;
         for(var i=0;i<$('.t_price').length;i++){
